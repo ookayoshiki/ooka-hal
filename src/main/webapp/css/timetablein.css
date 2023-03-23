@@ -1,0 +1,217 @@
+body#background1{
+  background-image: url(../image/haikei1.jpg);
+font-family:serif;
+}
+body#background2{
+  background-image: url(../image/haikei2.jpg);
+font-family:serif;
+}
+body#background3{
+  background-image: url(../image/haikei3.jpg);
+font-family:serif;
+}
+body#background4{
+  background-image: url(../image/haikei4.jpg);
+font-family:serif;
+}
+body#background5{
+  background-image: url(../image/haikei5.jpg);
+font-family:serif;
+}
+body#background6{
+  background-image: url(../image/haikei6.jpg);
+font-family:serif;
+}
+body#background7{
+  background-image: url(../image/haikei7.jpg);
+font-family:serif;
+}
+body#background8{
+  background-image: url(../image/haikei8.jpg);
+font-family:serif;
+}
+form.a {
+  width: 400px;
+  padding: 40px 10px 10px 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #FFF;
+}
+h1{
+	text-align:center;
+	font-size:25px;
+}
+p{
+		text-align:center;
+		padding:5px;
+		font-size: 18px;
+}
+.cp_ipselect {
+	position: relative;
+	width: 50%;
+	margin: 2em auto;
+}
+.cp_sl06 {
+	position: relative;
+	font-family: inherit;
+	background-color: transparent;
+	width: 100%;
+	padding: 10px 10px 10px 0;
+	font-size: 16px;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid #808080;
+}
+.cp_sl06:focus {
+	outline: none;
+	border-bottom: 1px solid #FFB2D8;
+}
+.cp_ipselect .cp_sl06 {
+	appearance: none;
+	-webkit-appearance:none
+}
+.cp_ipselect select::-ms-expand {
+	display: none;
+}
+.cp_ipselect:after {
+	position: absolute;
+	top: 18px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #FFB2D8;
+	pointer-events: none;
+}
+.cp_sl06_selectlabel {
+	color: #FFB2D8;
+	font-size: 16px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 0;
+	top: 10px;
+	transition: 0.2s ease all;
+}
+.cp_sl06:focus ~ .cp_sl06_selectlabel, .cp_sl06:valid ~ .cp_sl06_selectlabel {
+	color: #FFB2D8;
+	top: -20px;
+	transition: 0.2s ease all;
+	font-size: 14px;
+}
+.cp_sl06_selectbar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.cp_sl06_selectbar:before, .cp_sl06_selectbar:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: #FFB2D8;
+	transition: 0.2s ease all;
+}
+.cp_sl06_selectbar:before {
+	left: 50%;
+}
+.cp_sl06_selectbar:after {
+	right: 50%;
+}
+.cp_sl06:focus ~ .cp_sl06_selectbar:before, .cp_sl06:focus ~ .cp_sl06_selectbar:after {
+	width: 50%;
+}
+.cp_sl06_highlight {
+	position: absolute;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+.cp_iptxt {
+	position: relative;
+	width: 85%;
+	margin: 35px auto;
+}
+.cp_iptxt input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: 1px;
+	padding-left: 4em;
+}
+.cp_iptxt input[type='text']:focus {
+	outline: none;
+}
+.ef {
+	padding: 4px 0;
+	border: 0;
+	border-bottom: 1px solid #808080;
+	background-color: transparent;
+}
+.ef ~ .focus_line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: 0.4s;
+	background-color: #FFB2D8;
+}
+.ef:focus ~ .focus_line,
+.cp_iptxt.ef ~ .focus_line {
+	width: 100%;
+	transition: 0.4s;
+}
+.ef ~ label {
+	position: absolute;
+	z-index: -1;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #FFB2D8;
+}
+.ef:focus ~ label, .cp_iptxt.ef ~ label {
+	font-size: 12px;
+	top: -16px;
+	transition: 0.3s;
+	color: #FFB2D8;
+}
+.hoge{
+	text-align:center;
+}
+button {
+  margin: 20px 25px 20px 25px;
+  padding: 1em 2em;
+  border: none;
+  box-sizing:border-box;
+  width:150px;
+  display: inline-block;
+  font-size: 15px;
+  position: relative;
+  cursor: pointer;
+}
+button::before,
+button::after {
+   box-sizing:border-box;
+}
+.buttonA {
+  border:3px solid #FFB2D8;
+  background-color: #FFB2D8;
+  color: #fff;
+  border-radius:15px;
+}
+.buttonA:hover {
+  border:3px solid #FFB2D8;
+  background-color: #fff;
+  color: #FFB2D8;
+  border-radius:15px;
+}

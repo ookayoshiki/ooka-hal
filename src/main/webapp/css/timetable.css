@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+/* 共通のスタイル */
+
+body#background1{
+  background-image: url(../image/haikei1.jpg);
+font-family:serif;
+}
+body#background2{
+  background-image: url(../image/haikei2.jpg);
+font-family:serif;
+}
+body#background3{
+  background-image: url(../image/haikei3.jpg);
+font-family:serif;
+}
+body#background4{
+  background-image: url(../image/haikei4.jpg);
+font-family:serif;
+}
+body#background5{
+  background-image: url(../image/haikei5.jpg);
+font-family:serif;
+}
+body#background6{
+  background-image: url(../image/haikei6.jpg);
+font-family:serif;
+}
+body#background7{
+  background-image: url(../image/haikei7.jpg);
+font-family:serif;
+}
+body#background8{
+  background-image: url(../image/haikei8.jpg);
+font-family:serif;
+}
+ h1{
+  text-align: center;
+  padding:50px 0 0 0;
+  margin:0 0 40px 0;
+  font-size: 35px;
+ }
+.osare-table a{
+display: block;
+color: #880088;
+font-weight:bold;
+transition:.3s;
+transform: scale(1);
+text-decoration:none;
+line-height: 70px;
+}
+.osare-table a:visited{
+    color: #880088;
+}
+table a:hover{
+font-weight:bold;
+transform: scale(1.05);
+color:#f89174;
+}
+ table{
+ margin:auto;
+ }
+.osare-table {
+ margin:auto;
+ table-layout: fixed;
+ border-collapse: separate;
+ border-spacing: 7px 0px;
+}
+
+.osare-table th {
+ border: none !important;
+}
+
+.osare-table tbody td {
+  background-color:#FFF9FF ;
+  border-bottom: solid 3px #f9f9f9 !important;
+}
+
+/* ヘッダー */
+.osare-table thead th {
+ font-weight: bold;
+ border-radius: 10px 10px 0px 0px;
+}
+
+/* フッター（比較表と色つけたとき用） */
+.osare-table tfoot td {
+ border:none;
+ border-radius: 0 0 10px 10px;
+}
+
+
+/* ボディ項目 */
+.osare-table tbody th {
+  width: 130px;
+  height: 50px;
+ background:#f2f5fc;
+ font-weight: bold;
+ border-bottom: solid 3px #f9f9f9 !important;
+ line-height:4.5em;
+}
+
+/* フッター項目 */
+.osare-table tfoot th {
+ background:none;
+ line-height:3em;
+ font-weight: bold;
+}
+
+
+
+/* ボディデータ */
+.osare-table tbody td {
+  background:#feeeed;
+  width: 140px;
+  height: 50px;
+ text-align:center;
+}
+
+.osare-table tbody td a{
+}
+.osare-table tbody td a:hover{
+ background:#ffe3ea;
+}
+
+/* ヘッダー行　１列ごとの色変え */
+.osare-table thead th:nth-child(1)  {
+ background: #FFBBBB;
+}
+
+.osare-table thead th:nth-child(2)  {
+ background: #FFFFB2;
+}
+.osare-table thead th:nth-child(3)  {
+ background: #FFB2D8;
+}
+.osare-table thead th:nth-child(4)  {
+ background: #C4FF89;
+}
+.osare-table thead th:nth-child(5)  {
+ background: #FFC5A6;
+}
+.osare-table thead th:nth-child(6)  {
+ background: #81d4fa;
+}
+.osare-table thead th:nth-child(7)  {
+ background: #FFBCFF;
+}
+
+/* 最終行のボーダーをなくす */
+.osare-table tbody tr:last-child th,
+.osare-table tbody tr:last-child td {
+ border-bottom:none !important;
+}
+.hoge{
+	text-align:center;
+}
+button {
+  margin: 30px 50px 0 50px;
+  padding: 1em 2em;
+  border: none;
+  box-sizing:border-box;
+  width:150px;
+  display: inline-block;
+  font-size: 15px;
+  position: relative;
+  cursor: pointer;
+}
+button::before,
+button::after {
+   box-sizing:border-box;
+}
+.buttonA {
+  border:3px solid #FFB2D8;
+  background-color: #FFB2D8;
+  color: #fff;
+  border-radius:15px;
+}
+.buttonA:hover {
+  border:3px solid #FFB2D8;
+  background-color: #fff;
+  color: #FFB2D8;
+  border-radius:15px;
+}

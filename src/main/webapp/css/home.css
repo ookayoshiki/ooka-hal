@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+body#background1{
+  background-image: url(../image/haikei1.jpg);
+  padding:220px;
+font-family:serif;
+}
+body#background2{
+  background-image: url(../image/haikei2.jpg);
+  padding:220px;
+font-family:serif;
+}
+body#background3{
+  background-image: url(../image/haikei3.jpg);
+  padding:220px;
+font-family:serif;
+}
+body#background4{
+  background-image: url(../image/haikei4.jpg);
+  padding:220px;
+font-family:serif;
+}
+body#background5{
+  background-image: url(../image/haikei5.jpg);
+  padding:220px;
+font-family:serif;
+}
+body#background6{
+  background-image: url(../image/haikei6.jpg);
+  padding:220px;
+font-family:serif;
+}
+body#background7{
+  background-image: url(../image/haikei7.jpg);
+  padding:220px;
+font-family:serif;
+}
+body#background8{
+  background-image: url(../image/haikei8.jpg);
+  padding:220px;
+font-family:serif;
+}
+ table{
+ margin:0 auto;
+ }
+ table td{
+ padding:0 60px;
+ }
+.btn-circle-stitch1 {
+  padding:0 auto 0 auto;
+  font-size:35px;
+  display: inline-block;
+  text-decoration: none;
+  background: #fc9db8;
+  color: #FFF;
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 5px #fc9db8;
+  border: dashed 1px #FFF;
+  transition: .4s;
+}
+
+.btn-circle-stitch1:hover {
+  background: #e8505f;
+  box-shadow: 0px 0px 0px 5px #e8505f;
+}
+.btn-circle-stitch2 {
+  padding:0 auto 0 auto;
+  font-size:35px;
+  display: inline-block;
+  text-decoration: none;
+  background: #87befd;
+  color: #FFF;
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  border-radius: 50%;
+  text-align: center;
+  align: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 5px #87befd;
+  border: dashed 1px #FFF;
+  transition: .4s;
+}
+
+.btn-circle-stitch2:hover {
+  background: #668ad8;
+  box-shadow: 0px 0px 0px 5px #668ad8;
+}
+.mask{
+  background-image: url(../image/haikei9.jpg);
+  position:fixed; /*固定表示*/
+  top:0;
+  left:0;
+  width: 100vw; /*画面幅*/
+  height: 100vh; /*画面の高さ*/
+  background-color: #FFB2D8; /*背景色*/
+  z-index:999; /*最前面に*/
+  animation: fadeOut 0.8s forwards; /*フェードアウト*/
+  animation-delay: 2.8s; /*ロゴ画像のアニメーション後に*/
+}
+
+/*フェードアウトアニメーション*/
+@keyframes fadeOut{
+  0%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/***ロゴ画像***/
+.mask img{
+ width:88px;
+ height:116px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+    animation: rotation 2.5s forwards;
+}
+
+/*回転するアニメーション*/
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+   6% {
+    transform: rotate(0);
+  }
+  48% {
+    transform: rotate(360deg);
+  }
+    53% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}

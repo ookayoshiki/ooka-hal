@@ -1,0 +1,164 @@
+@charset "utf-8";
+body#background1{
+  background-image: url(../image/haikei1.jpg);
+font-family:serif;
+}
+body#background2{
+  background-image: url(../image/haikei2.jpg);
+font-family:serif;
+}
+body#background3{
+  background-image: url(../image/haikei3.jpg);
+font-family:serif;
+}
+body#background4{
+  background-image: url(../image/haikei4.jpg);
+font-family:serif;
+}
+body#background5{
+  background-image: url(../image/haikei5.jpg);
+font-family:serif;
+}
+body#background6{
+  background-image: url(../image/haikei6.jpg);
+font-family:serif;
+}
+body#background7{
+  background-image: url(../image/haikei7.jpg);
+font-family:serif;
+}
+body#background8{
+  background-image: url(../image/haikei8.jpg);
+font-family:serif;
+}
+  h1{
+  text-align: center;
+  padding:50px 0 0 0;
+  margin: 0 0 20px 0;
+  font-size: 35px;
+ }
+ p{
+ text-align:center;
+ font-size: 20px;
+ padding:15px 0 15px 0;
+ }
+#aiueo{
+ width:92%;
+ margin:0 auto;
+ font-size: 21px;
+ }
+ #aiue{
+ display:flex;
+ }
+ #aiueo table{
+  table-layout:fixed;
+  width:100%;
+ }
+  #aiueo table td{
+  padding:6px;
+  }
+ #aiueo table td.to{
+  width:70%;
+ }
+.tab-area{
+background-color:#FFF9FF ;
+width: 900px;
+margin:0 auto;
+border-radius: 8px 8px 0 0;
+}
+.tab-btn{
+display:none; /*タブの切り替えを制御するラジオボタンを非表示に*/
+}
+.tab-list-wrap{
+padding:0; /*デフォルトの値をクリア*/
+margin: 0; /*デフォルトの値をクリア*/
+list-style-type:none; /*デフォルトの値をクリア*/
+display:flex; /*ボタンを横並びに*/
+justify-content:space-between; /*ボタンを横幅いっぱいに配置*/
+}
+
+.tab-list{
+display:block;
+width: 225px;
+padding: 8px 0;
+text-align:center;
+border-top:1px solid #ff80c0;
+border-left:1px solid #ff80c0;
+border-right:1px solid #ff80c0;
+border-radius: 4px 4px 0 0;
+background:#ffffff;
+box-sizing:border-box; /*borderの値を横幅に含める*/
+cursor:pointer; /*オンマウス時にカーソルを指の形に*/
+}
+
+#tab-btn1:checked ~ .tab-list-wrap #tab-list1{
+  background: #81d4fa;
+}
+#tab-btn2:checked ~ .tab-list-wrap #tab-list2{
+  background: #C4FF89;
+}
+#tab-btn3:checked ~ .tab-list-wrap #tab-list3{
+ background: #FFFFB2;
+}
+#tab-btn4:checked ~ .tab-list-wrap #tab-list4{
+ background: #FFB2D8;
+}
+.tab-content{
+padding:20px;
+border-bottom: 1px solid #ff80c0;
+border-left: 1px solid #ff80c0;
+border-right: 1px solid #ff80c0;
+display:none; /*初期状態を非表示に*/
+}
+#tab-btn1:checked ~ .tab-content-wrap #tab-content1,
+#tab-btn2:checked ~ .tab-content-wrap #tab-content2,
+#tab-btn3:checked ~ .tab-content-wrap #tab-content3,
+#tab-btn4:checked ~ .tab-content-wrap #tab-content4{
+display: block;/*対応するボタンにチェックが入ったときに表示*/
+}
+.hoge{
+	text-align:center;
+    }
+button.buttonA {
+  margin: 25px 0 0 185px;
+  padding: 1em 2em;
+  border: none;
+  box-sizing:border-box;
+  width:155px;
+  display: inline-block;
+  font-size: 15px;
+  position: relative;
+  cursor: pointer;
+}
+button.buttonA::before,
+button.buttonA::after {
+   box-sizing:border-box;
+}
+.buttonA {
+  border:3px solid #FFB2D8;
+  background-color: #FFB2D8;
+  color: #fff;
+  border-radius:15px;
+}
+.buttonA:hover {
+  border:1px solid #FFB2D8;
+  background-color: #fff;
+  color: #FFB2D8;
+  border-radius:15px;
+}
+button.buttonB{
+  margin:5px 52px 0 52px;
+}
+.buttonB {
+  width:150px;
+  border:3px solid #BBB;
+  background-color: #FFF;
+  color: #BBB;
+  border-radius:15px;
+}
+.buttonB:hover {
+  border:3px solid #FFF;
+  background-color: #DDD;
+  color: #FFF;
+  border-radius:15px;
+}

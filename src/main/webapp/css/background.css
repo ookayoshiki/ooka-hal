@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+body#background1{
+  background-image: url(../image/haikei1.jpg);
+  text-align: center;
+font-family:serif;
+}
+body#background2{
+  background-image: url(../image/haikei2.jpg);
+  text-align: center;
+font-family:serif;
+}
+body#background3{
+  background-image: url(../image/haikei3.jpg);
+  text-align: center;
+font-family:serif;
+}
+body#background4{
+  background-image: url(../image/haikei4.jpg);
+  text-align: center;
+font-family:serif;
+}
+body#background5{
+  background-image: url(../image/haikei5.jpg);
+  text-align: center;
+font-family:serif;
+}
+body#background6{
+  background-image: url(../image/haikei6.jpg);
+  text-align: center;
+font-family:serif;
+}
+body#background7{
+  background-image: url(../image/haikei7.jpg);
+  text-align: center;
+font-family:serif;
+}
+body#background8{
+  background-image: url(../image/haikei8.jpg);
+  text-align: center;
+font-family:serif;
+}
+h1{
+  font-size:35px;
+  margin:10px 0 20px 0;
+}
+form {
+  width: 820px;
+  padding: 40px 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #FFF;
+  text-align: center;
+}
+input[type=radio]+label:before{
+ content: "";
+ display: inline-block;
+ background-size: contain;
+ width: 170px;
+ height: 170px;
+  margin:10px 10px 10px 10px;
+}
+input[type=radio][value="1"]+label:before{
+ background-image: url(../image/haikei1.jpg);
+}
+input[type=radio][value="2"]+label:before{
+ background-image: url(../image/haikei2.jpg);
+}
+input[type=radio][value="3"]+label:before{
+  background-image: url(../image/haikei3.jpg);
+}
+input[type=radio][value="4"]+label:before{
+  background-image: url(../image/haikei4.jpg);
+}
+input[type=radio][value="5"]+label:before{
+  background-image: url(../image/haikei5.jpg);
+}
+input[type=radio][value="6"]+label:before{
+  background-image: url(../image/haikei6.jpg);
+}
+input[type=radio][value="7"]+label:before{
+  background-image: url(../image/haikei7.jpg);
+}
+input[type=radio][value="8"]+label:before{
+  background-image: url(../image/haikei8.jpg);
+}
+input[type=radio]:checked+label::before{
+  border: 3px solid #000;
+  box-sizing: border-box;
+}
+input[type=radio]{
+  display: none;
+}
+button.buttonA {
+  margin: 35px auto 0 auto;
+  padding: 1em 2em;
+  border: none;
+  box-sizing:border-box;
+  width:150px;
+  display: inline-block;
+  font-size: 15px;
+  position: relative;
+  cursor: pointer;
+}
+button.buttonA::before,
+button.buttonA::after {
+   box-sizing:border-box;
+}
+.buttonA {
+  border:3px solid #FFB2D8;
+  background-color: #FFB2D8;
+  color: #fff;
+  border-radius:15px;
+}
+.buttonA:hover {
+  border:1px solid #FFB2D8;
+  background-color: #fff;
+  color: #FFB2D8;
+  border-radius:15px;
+}

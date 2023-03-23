@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* 共通のスタイル */
+body {
+  background-image: url(../image/haikei.jpg);
+  text-align: center;
+font-family:serif;
+}
+form {
+  width:1000px;
+  position: absolute;
+  top: 55%;
+  left:50%;
+  transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+form h1 {
+  text-shadow:3px 3px 6px white;
+  font-size: 80px;
+}
+#home {
+  clip-path: url(#cache);
+}
+
+  button {
+  margin:60px 0 0 0;
+  padding: 1em 2em;
+  border: none;
+  box-sizing:border-box;
+  width:250px;
+  display: inline-block;
+  font-size: 25px;
+  position: relative;
+  cursor: pointer;
+}
+button::before,
+button::after {
+   box-sizing:border-box;
+}
+.buttonA {
+  border:3px solid #FFB2D8;
+  background-color: #FFB2D8;
+  color: #fff;
+  border-radius:25px;
+}
+.buttonA:hover {
+  border:3px solid #FFB2D8;
+  background-color: #fff;
+  color: #FFB2D8;
+  border-radius:15px;
+}
